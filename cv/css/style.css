@@ -1,0 +1,276 @@
+body{
+    width: 360px;
+    height: 640px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+	background-color: rgb(255, 255, 255);
+	background-size: auto,;
+    max-width: 360px;
+    max-height: 640px;
+   
+}
+.{}
+aside{
+    position: absolute;
+    background-color: rgba(124,119,175,255);
+    width: 120px;
+    height: 640px;
+    border-radius: 5px 0px 0px 5px;
+    color:azure;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+div#photocvv{
+    background-color: rgba(112,100,167,255);
+    border-radius: 5px 0px 0px 15px;
+    margin-top: -16px;
+    height: 95px;
+}
+img.photocv {
+    width: 170%;
+    margin-left: -15px;
+   border-radius: 35px;
+   margin-top: 13px;
+   margin-bottom: -1px;
+}
+
+div#dash{
+    border-bottom: 5px solid rgba(255, 255, 255, 0.688);
+    border-radius: 15px;
+ 
+}
+div#moi{
+    text-align: left;
+    height: 545px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+div#moi div#profil, div#contact, div#competences{
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    text-align: left ;
+    
+}
+div#profil h6{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 13px;
+}
+div#dash2{
+    border-bottom: 5px solid rgba(255, 255, 255, 0.688);
+    border-radius: 15px;
+    width: 45px;
+    margin-left: 22.5px;
+    margin-top: 2px;
+    margin-bottom: 16px;
+}
+
+p#text1{
+    font-size: 9px;
+    
+}
+
+div#contact h6{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 13px;
+    
+}
+p#text2{
+    font-size: 8px;
+    margin-top: -18px;
+    text-align: left;
+    margin-left: 25px;
+    
+}
+
+div#num{
+    margin-top: 10px;
+    height: 20px;
+    margin-bottom: -20px;
+}
+div#mail{
+    margin-top: 10px;
+    height: 30px;
+    margin-bottom: -20px;
+    
+}
+div#map{
+    margin-top: 10px;
+    height: 30px;
+    margin-bottom: -20px;
+}
+div#reseau{
+    margin-top: 10px;
+    height: 20px;
+    
+}
+#icon{
+    margin-left:  0;
+    
+}
+#ist{
+    margin-left: 0px;
+}
+a:-webkit-any-link {
+    color: azure;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover #ist{
+    color: gold;
+  }
+a:hover #text1{
+    color: gold;
+  }
+
+  div#competences h6{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 13px;
+}
+p#text-competence{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 8px;
+    
+}
+progress {
+    -webkit-appearance: none;
+    
+  }
+  
+  ::-webkit-progress-bar {
+    background-color: rgba(217, 143, 212, 0.66);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 8px;
+    
+  }
+  ::-webkit-progress-value {
+    background-color: rgb(159, 94, 163);
+    border-radius: 10x 0px 0px 10px;
+    height: 8px;
+  }
+#barre{
+    max-width: 85px;
+}
+section#colone-de-droite{
+    color:rgb(0, 0, 0);
+    margin-left: 120px;
+    background-color: rgba(245,228,241,255);
+    width: 240px;
+    height: 640px;
+    max-height: 640px;
+    
+}
+
+div#header{
+    background-color: rgba(227,204,224,255);
+    height: 95px;
+    border-radius: 0px 15px 15px 0px;
+}
+h1#prenom_nom{
+    padding-top: 14px;
+    padding-left: 5px;
+    text-align: left;
+    font-family:system-ui ;
+    font-size: 17px;
+    width: 5px;
+    
+    
+}
+h1#prenom_nom{
+    color: rgb(48, 46, 46);
+   
+}
+h1#prenom_nom span{
+    color: rgba(45, 53, 126, 0.973);
+}
+
+div#premier_bloc{
+    background-color:rgba(85, 64, 82, 0.103); ;
+    border-radius: 15px;
+    height: 300px;
+}
+mark{
+    background-color: rgba(101, 45, 180, 0.173);
+}
+div#premier_bloc h2#premier_point{
+    padding-top: 5px;
+    padding-left: 10px;
+    color: rgb(48, 46, 46);
+    text-align: left;
+    font-size: 10px;
+    font-family:sans-serif;
+    font-weight: 400;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    background-color: rgba(187, 150, 181, 0.348);
+    border-radius: 15px;
+    width: 200px;
+}
+div#premier_bloc h2#premier_point span{
+    color: rgba(45, 53, 126, 0.973);
+}
+div#deuxieme_bloc{
+    background-color:rgba(85, 64, 82, 0.103); ;
+    border-radius: 15px;
+    height: 120px;
+}
+div#deuxieme_bloc h3#deuxieme_point{
+    padding-top: 5px;
+    padding-left: 10px;
+    color: rgb(48, 46, 46);
+    text-align: left;
+    font-size: 10px;
+    font-family:sans-serif;
+    font-weight: 400;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    background-color: rgba(187, 150, 181, 0.348);
+    border-radius: 15px;
+    width: 200px;
+    
+}
+div#deuxieme_bloc h3#deuxieme_point span{
+    color: rgba(45, 53, 126, 0.973);
+}
+div#troisieme_bloc{
+    background-color:rgba(85, 64, 82, 0.103); ;
+    border-radius: 15px;
+    height: 80px;
+}
+div#troisieme_bloc h4#troisieme_point{
+    padding-top: 5px;
+    padding-left: 10px;
+    color: rgb(48, 46, 46);
+    text-align: left;
+    font-size: 10px;
+    font-family:sans-serif;
+    font-weight: 400;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    background-color: rgba(187, 150, 181, 0.348);
+    border-radius: 15px;
+    width: 200px;
+}
+div#troisieme_bloc h4#troisieme_point span{
+    color: rgba(45, 53, 126, 0.973);
+}
+section ul{
+    font-size: 9px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: -25px;
+  
+}
+
+li#espace{
+    padding-top: 10px;
+
+}
