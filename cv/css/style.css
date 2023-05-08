@@ -181,7 +181,7 @@ h1#prenom_nom{
     text-align: left;
     font-family:system-ui ;
     font-size: 17px;
-    width: 5px;
+    
     
     
 }
@@ -196,7 +196,7 @@ h1#prenom_nom span{
 div#premier_bloc{
     background-color:rgba(85, 64, 82, 0.103); ;
     border-radius: 15px;
-    height: 300px;
+    height: 380px;
 }
 mark{
     background-color: rgba(101, 45, 180, 0.173);
@@ -221,7 +221,7 @@ div#premier_bloc h2#premier_point span{
 div#deuxieme_bloc{
     background-color:rgba(85, 64, 82, 0.103); ;
     border-radius: 15px;
-    height: 120px;
+    height: 145px;
 }
 div#deuxieme_bloc h3#deuxieme_point{
     padding-top: 5px;
@@ -244,6 +244,7 @@ div#deuxieme_bloc h3#deuxieme_point span{
 div#troisieme_bloc{
     background-color:rgba(85, 64, 82, 0.103); ;
     border-radius: 15px;
+    height: 80px;
     height: 80px;
 }
 div#troisieme_bloc h4#troisieme_point{
