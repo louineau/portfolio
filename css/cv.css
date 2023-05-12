@@ -2659,7 +2659,7 @@
  input[type="submit"].btn--primary,
  input[type="reset"].btn--primary,
  input[type="button"].btn--primary {
-   background: #662f68;
+   background: #fefefeb5;
    border-color: #ffffff;
    color: #ffffff;
  }
@@ -4141,7 +4141,7 @@
   h2.date{
     margin-top: 2rem;
     font-size: 1.9rem;
-    color: #ffffff;
+    color: #7b1180;
     text-transform: uppercase;
   }
 
