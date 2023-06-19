@@ -1919,7 +1919,7 @@
  a:hover,
  a:focus,
  a:active {
-   color: #f3f2f2;
+   color: #f50909;
  }
  
  a:hover,
@@ -3145,7 +3145,17 @@
      width: 250px;
    }
  }
- 
+
+ /* ------------------------------------------------------------------- 
+  * ##  presentation
+  * ------------------------------------------------------------------- */
+
+#presentation {
+  background-color: ;
+}
+
+
+
  /* ------------------------------------------------------------------- 
   * ## slick slider 
   * ------------------------------------------------------------------- */
@@ -4551,26 +4561,34 @@
    }
  }
  
- /* ===================================================================
-  * # works
-  *
+
+/* ------------------------------------------------------------------- 
+  * ## veille responsive
   * ------------------------------------------------------------------- */
- .s-works {
-   background: #3333;
-   min-height: 800px;
-   position: relative;
- }
- 
- .s-works .intro-wrap {
-   padding: 6.2rem 0 5.2rem;
-   background-color: #ffffff;
- }
- 
- .works-content {
-   max-width: 1160px;
-   margin-top: -23.4rem;
- }
- 
+  .veille {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .veille .content {
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0)
+  }
+  
+  .veille .content iframe {
+    max-height: 850px;
+    width: 100%;
+    width: 1500px;
+    height: 850px;
+    position: relative;
+  }
+  
  /* ------------------------------------------------------------------- 
   * ## bricks/masonry
   * ------------------------------------------------------------------- */
@@ -5383,6 +5401,7 @@
    line-height: 2;
    text-align: center;
    color: rgba(255, 255, 255, 0.3);
+   background-color: rgba(27, 27, 27, 0.178);
  }
  
  footer h4 {
