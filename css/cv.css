@@ -1919,7 +1919,7 @@
  a:hover,
  a:focus,
  a:active {
-   color: #f2f3f2;
+   color: #f3f2f2;
  }
  
  a:hover,
@@ -2645,7 +2645,7 @@
  input[type="submit"]:focus,
  input[type="reset"]:focus,
  input[type="button"]:focus {
-   background-color: #b8b8b8;
+   background-color: #ffffff;
    border-color: #b8b8b8;
    color: #000000;
    outline: 0;
@@ -2654,27 +2654,54 @@
  /* button primary
   * ------------------------------------------------- */
  
- .btn.btn--primary,
- button.btn--primary,
- input[type="submit"].btn--primary,
- input[type="reset"].btn--primary,
- input[type="button"].btn--primary {
-   background: #fefefeb5;
-   border-color: #ffffff;
+  .btn.btn---first,
+  button.btn---fisrt,
+  input[type="submit"].btn---fisrt,
+  input[type="reset"].btn---fisrt,
+  input[type="button"].btn---fisrt {
+    background: #ffffff;
+    border-color: #b12929;
+    color: #ffffff;
+  }
+  
+  .btn.btn---fisrt:hover,
+  button.btn---fisrt:hover,
+  input[type="submit"].btn---fisrt:hover,
+  input[type="reset"].btn---fisrt:hover,
+  input[type="button"].btn---fisrt:hover,
+  .btn.btn---fisrt:focus,
+  button.btn---fisrt:focus,
+  input[type="submit"].btn---fisrt:focus,
+  input[type="reset"].btn---fisrt:focus,
+  input[type="button"].btn---fisrt:focus {
+    background: #adadad;
+    border-color: #3e3b3b;
+  }
+
+ /* button secondly
+  * ------------------------------------------------- */
+
+ .btn.btn--secondly,
+ button.btn--secondly,
+ input[type="submit"].btn--secondly,
+ input[type="reset"].btn--secondly,
+ input[type="button"].btn--secondly {
+   background: #000000b5;
+   border-color: #b12929;
    color: #ffffff;
  }
  
- .btn.btn--primary:hover,
- button.btn--primary:hover,
- input[type="submit"].btn--primary:hover,
- input[type="reset"].btn--primary:hover,
- input[type="button"].btn--primary:hover,
- .btn.btn--primary:focus,
- button.btn--primary:focus,
- input[type="submit"].btn--primary:focus,
- input[type="reset"].btn--primary:focus,
- input[type="button"].btn--primary:focus {
-   background: #ffffff;
+ .btn.btn--secondly:hover,
+ button.btn--secondly:hover,
+ input[type="submit"].btn--secondly:hover,
+ input[type="reset"].btn--secondly:hover,
+ input[type="button"].btn--secondly:hover,
+ .btn.btn--secondly:focus,
+ button.btn--secondly:focus,
+ input[type="submit"].btn--secondly:focus,
+ input[type="reset"].btn--secondly:focus,
+ input[type="button"].btn--secondly:focus {
+   background: #adadad;
    border-color: #3e3b3b;
  }
  
@@ -3590,8 +3617,8 @@
  
  .home-content__buttons .btn {
    width: 215px;
-   border-color: #ffffff;
-   color: #ffffff;
+   border-color: #c91919;
+   color: #0d0d0d;
    margin: 1.5rem 1.5rem 0 0;
    letter-spacing: 0.25rem;
    -webkit-transition: all 0.5s ease-in-out;
@@ -3604,8 +3631,8 @@
  
  .home-content__buttons .btn:hover,
  .home-content__buttons .btn:focus {
-   background: #ffffff !important;
-   color: #240e57;
+   background: #acacac51 !important;
+   color: #fffffff7;
  }
  
  .home-content__scroll {
@@ -4014,7 +4041,42 @@
   padding-right: 25px;
   width: 85%;
 }
+  /* ===================================================================
+  * # table
+  *
+  * ------------------------------------------------------------------- */
+
+  #table{
+    margin-bottom: 6.2rem;
+    background-color: #111111;
+    font-family: Helvetica, sans-serif;
+  }
+  h3.smalltabletext{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom:  1rem;
+  }
+
+  h1.tabletext {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .table {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
  
+  
  /* ===================================================================
   * # timeline
   *
@@ -4203,7 +4265,7 @@
  }
  
  .s-about .section-header.has-bottom-sep::before {
-   background-color: rgba(255, 255, 255, 0.25);
+   background-color: rgba(108, 108, 108, 0.407);
  }
 
  .contentabout {
@@ -4375,7 +4437,7 @@
   * ------------------------------------------------------------------- */
  .s-services {
    padding-top: 6.2rem;
-   padding-bottom: 13.2rem;
+   padding-bottom: 1.2rem;
    background-color: #ffffff;
    color: #757575;
    position: relative;
@@ -4410,7 +4472,7 @@
  
  .services-list .service-icon {
    float: left;
-   color: #ffffff;
+   color: #000000;
    font-size: 4.8rem;
    margin-top: -0.6rem;
  }
