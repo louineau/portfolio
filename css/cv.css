@@ -2710,7 +2710,32 @@
    background: #adadad;
    border-color: #3e3b3b;
  }
- 
+  /* button thirdly
+  * ------------------------------------------------- */
+
+  .btn.btn--thirdly,
+  button.btn--thirdly,
+  input[type="submit"].btn--thirdly,
+  input[type="reset"].btn--thirdly,
+  input[type="button"].btn--thirdly {
+    background: #1c5ae0e2;
+    border-color: #b12929;
+    color: #ffffff;
+  }
+  
+  .btn.btn--thirdly:hover,
+  button.btn--thirdly:hover,
+  input[type="submit"].btn--thirdly:hover,
+  input[type="reset"].btn--thirdly:hover,
+  input[type="button"].btn--thirdly:hover,
+  .btn.btn--thirdly:focus,
+  button.btn--thirdly:focus,
+  input[type="submit"].btn--thirdly:focus,
+  input[type="reset"].btn--thirdly:focus,
+  input[type="button"].btn--thirdly:focus {
+    background: #0655ff;
+    border-color: #3e3b3b;
+  }
  /* button modifiers
   * ------------------------------------------------- */
  
