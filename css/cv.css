@@ -2289,7 +2289,7 @@
    font-family: "lora-regular", serif;
  }
  .veille .content {
-  bo
+  
   width: 100%;
   max-width: 100%;
   display: flex;
@@ -3182,7 +3182,7 @@
   * ------------------------------------------------------------------- */
 
 #presentation {
-  background-color: ;
+  /*background-color: ;*/
 }
 
 
@@ -4603,7 +4603,7 @@
   }
   .veille .content{
     width: 1200px;
-    width: ;
+    /*width: ;*/
   }
 
  /* ------------------------------------------------------------------- 
