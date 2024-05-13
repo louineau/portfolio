@@ -5690,3 +5690,55 @@
 
 
 
+ .accordion-header {
+    color: #444;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  border-radius: 0.50rem;
+  font-size: 15px;
+  transition: 0.4s;
+  font-family: "montserrat-medium", sans-serif;
+}
+
+.accordion-header:hover {
+  background-color: #262424;
+  color: #eae3e3;
+}
+
+.accordion-header.active {
+  background-color: #262424;
+  color: #eae3e3;
+  border-radius: 0.50rem  0.50rem 0px 0px;
+}
+
+
+.accordion-header i {
+  margin-right: 10px;
+}
+
+.accordion-content {
+  display: flex;
+  padding: 0 18px;
+  background-color: rgb(234 232 241 / 40%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0px 0px  0.50rem  0.50rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+@media (max-width: 767px) {
+  .accordion-header {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .accordion-header {
+    font-size: 22px;
+  }
+}
