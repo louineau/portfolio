@@ -3142,7 +3142,7 @@
  }
  
  .section-header.has-bottom-sep.light-sep::before {
-   background-color: rgba(255, 255, 255, 0.05);
+   background-color: rgba(241, 238, 238, 0.279)
  }
  
  /* ------------------------------------------------------------------- 
@@ -4511,7 +4511,9 @@
  
  .services-list .service-text {
    margin-left: 7.8rem;
- }
+   max-width: 500px;
+   white-space: inherit;
+  }
  
  .services-list .service-icon {
    float: left;
@@ -5720,15 +5722,19 @@
   margin-right: 10px;
 }
 
+
 .accordion-content {
   display: flex;
-  padding: 0 18px;
   background-color: rgb(234 232 241 / 40%);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 0px 0px  0.50rem  0.50rem;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out; 
+}
+
+.content-flex{
+  display: flex;
 }
 
 @media (max-width: 767px) {
