@@ -300,7 +300,9 @@
  
  img.site-logo-header{
    max-width: 250%;
-   height: auto;
+   float: left;
+   width: 45px;
+   height: 45px;
  }
  
  
@@ -540,7 +542,10 @@
  }
  
  .block-1-2 .col-block {
-   width: 50%;
+  width: 46%;
+  background: white;
+  border-radius: 20px;
+  margin: 30px 20px;
  }
  
  /**
