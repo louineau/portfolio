@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Responsive - Noah Louineau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            /* Augmente la taille de base pour rendre tout le site plus grand */
+            font-size: 17px;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style pour la barre de défilement */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header & Navigation Mobile -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-900">Noah Louineau</a>
+            <button id="menu-btn" class="md:hidden block text-gray-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="#a-propos" class="text-gray-600 hover:text-gray-900 transition">À propos</a>
+                <a href="#parcours" class="text-gray-600 hover:text-gray-900 transition">Parcours</a>
+                <a href="#diplomes" class="text-gray-600 hover:text-gray-900 transition">Diplômes</a>
+                <a href="#competences" class="text-gray-600 hover:text-gray-900 transition">Compétences</a>
+                <a href="#projets" class="text-gray-600 hover:text-gray-900 transition">Projets</a>
+                <a href="#contact" class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu mobile plein écran -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center">
+        <button id="close-menu-btn" class="absolute top-4 right-4 text-white">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <nav class="flex flex-col space-y-8 text-center">
+            <a href="#a-propos" class="text-white text-2xl hover:text-gray-300 transition mobile-nav-link">À propos</a>
+            <a href="#parcours" class="text-white text-2xl hover:text-gray-300 transition mobile-nav-link">Parcours</a>
+            <a href="#diplomes" class="text-white text-2xl hover:text-gray-300 transition mobile-nav-link">Diplômes</a>
+            <a href="#competences" class="text-white text-2xl hover:text-gray-300 transition mobile-nav-link">Compétences</a>
+            <a href="#projets" class="text-white text-2xl hover:text-gray-300 transition mobile-nav-link">Projets</a>
+            <a href="#contact" class="text-white text-2xl hover:text-gray-300 transition mobile-nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Contenu Principal -->
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- Section Héros -->
+        <section id="hero" class="text-center my-12 md:my-20">
+            <h1 class="text-4xl md:text-6xl font-bold mb-2">Noah Louineau</h1>
+            <p class="text-xl md:text-2xl text-gray-600">Administrateur Système et Réseau</p>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="a-propos" class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold mb-4 border-b-2 border-gray-800 pb-2">À propos de moi</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Je suis un étudiant en Bac+4 Administrateur Système et Réseau en alternance à l'école ENI Informatique et mon établissement d'apprentissage est le Centre Hospitalier Henri Laborit. J'ai toujours eu une passion pour ce métier. Je continue de me former jour après jour pour être le plus opérationnel possible. Je souhaite poursuivre mes études jusqu'au Bac+5.
+            </p>
+        </section>
+        
+        <hr class="my-16 border-gray-200">
+
+        <!-- Section Parcours -->
+        <section id="parcours">
+            <h2 class="text-3xl font-bold mb-8 text-center">Mon parcours</h2>
+            <div class="container mx-auto px-4">
+                <div class="relative">
+                    <!-- Vertical Line -->
+                    <div class="absolute top-0 h-full w-3 bg-gray-300 left-4 md:left-1/2 md:-translate-x-1/2 rounded-full"></div>
+                    
+                    <!-- Timeline Item 1 (Formation) -->
+                    <div class="relative mb-8">
+                        <div class="md:flex md:items-center md:justify-end">
+                            <div class="md:w-1/2 md:pr-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg relative ml-8 md:ml-5">
+                                    <!-- Dot -->
+                                    <div class="absolute w-6 h-6 bg-gray-800 rounded-full border-4 border-gray-100 -left-11 top-1/2 -translate-y-1/2 md:left-auto md:-right-11"></div>
+                                    <p class="text-sm font-medium text-violet-600">2023 - 2024</p>
+                                    <h3 class="font-bold text-gray-800 text-xl mt-1">BTS SIO SISR (Bac+2)</h3>
+                                    <p class="text-sm text-gray-600">Lycée Alienor d'Aquitaine</p>
+                                    <p class="text-xs text-gray-500 italic mt-1">Durée : 2 ans</p>
+                                    <p class="text-gray-700 mt-2 text-sm">Formation sur les bases de l'administration système et réseau. Compétences acquises :</p>
+                                    <ul class="list-disc list-inside text-gray-700 mt-2 text-sm space-y-1">
+                                        <li><strong>Virtualisation :</strong> VirtualBox, Proxmox</li>
+                                        <li><strong>Systèmes :</strong> Administration Linux & Windows</li>
+                                        <li><strong>Réseau :</strong> Installation et configuration de Switchs et Routeurs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 (Experience) -->
+                    <div class="relative mb-8">
+                         <div class="md:flex md:items-center">
+                            <div class="md:w-1/2 md:pl-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg relative ml-8 md:mr-5">
+                                    <!-- Dot -->
+                                    <div class="absolute w-6 h-6 bg-gray-800 rounded-full border-4 border-gray-100 -left-11 top-1/2 -translate-y-1/2"></div>
+                                    <p class="text-sm font-medium text-violet-600">mai à juin 2023</p>
+                                    <h3 class="font-bold text-gray-800 text-xl mt-1">Stage service informatique</h3>
+                                    <p class="text-sm text-gray-600">Zolux, Saintes</p>
+                                    <p class="text-xs text-gray-500 italic mt-1">Durée : 6 semaines</p>
+                                    <p class="text-gray-700 mt-2 text-sm">Stage au sein de l'entreprise Zolux, spécialisée dans les produits pour animaux de compagnie. Missions principales :</p>
+                                    <ul class="list-disc list-inside text-gray-700 mt-2 text-sm space-y-1">
+                                       <li>Cartographie de l'ensemble des sites du réseau de l'entreprise.</li>
+                                       <li>Mise à jour du parc informatique via le logiciel d'inventaire GLPI.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 (Experience) -->
+                    <div class="relative mb-8">
+                        <div class="md:flex md:items-center md:justify-end">
+                            <div class="md:w-1/2 md:pr-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg relative ml-8 md:ml-5">
+                                    <!-- Dot -->
+                                    <div class="absolute w-6 h-6 bg-gray-800 rounded-full border-4 border-gray-100 -left-11 top-1/2 -translate-y-1/2 md:left-auto md:-right-11"></div>
+                                    <p class="text-sm font-medium text-violet-600">janvier à février 2024</p>
+                                    <h3 class="font-bold text-gray-800 text-xl mt-1">Stage service infrastructure</h3>
+                                    <p class="text-sm text-gray-600">Centre Hospitalier Henri Laborit, Poitiers</p>
+                                    <p class="text-xs text-gray-500 italic mt-1">Durée : 6 semaines</p>
+                                    <p class="text-gray-700 mt-2 text-sm">Stage au sein du Centre Hospitalier Henri Laborit, spécialisé dans les soins psychiatriques. Missions principales :</p>
+                                    <ul class="list-disc list-inside text-gray-700 mt-2 text-sm space-y-1">
+                                       <li>Proof of Concept d'un outil gestionnaire de connexions Guacamole.</li>
+                                       <li>Monté en version d'un serveur Radius.</li>
+                                       <li>Essai de connexion de fibres optiques.</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <!-- Timeline Item 4 (Formation) -->
+                    <div class="relative mb-8">
+                         <div class="md:flex md:items-center">
+                            <div class="md:w-1/2 md:pl-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg relative ml-8 md:mr-5">
+                                    <!-- Dot -->
+                                    <div class="absolute w-6 h-6 bg-gray-800 rounded-full border-4 border-gray-100 -left-11 top-1/2 -translate-y-1/2"></div>
+                                    <p class="text-sm font-medium text-violet-600">Octobre 2024 à septembre 2025</p>
+                                    <h3 class="font-bold text-gray-800 text-xl mt-1">Licence professionnel, Administrateur Système DevOps (Bac+3)</h3>
+                                    <p class="text-sm text-gray-600">Centre Hospitalier Henri Laborit | ENI, Niort</p>
+                                    <p class="text-xs text-gray-500 italic mt-1">Durée : 1 an</p>
+                                    <p class="text-gray-700 mt-2 text-sm">Formation axée sur l’administration avancée des systèmes et la mise en place de solutions DevOps, avec mise en pratique au sein du service infrastructure.</p>
+                                    <ul class="list-disc list-inside text-gray-700 mt-2 text-sm space-y-1">
+                                       <li><strong>Compétences étudiées :</strong> Automatisation (Ansible, Terraform, Pipeline Github Action/Gitlab), Cloud (Azure), Scripting (Bash, Python), Virtualisation (VMware, Windows Server, Docker, Kubernetes), Monitoring (Grafana, Mimir, Prometheus, Loki, ...).</li>
+                                       <li><strong>Missions entreprise:</strong></li>
+                                        <ul class="list-disc list-inside ml-5 text-gray-700 mt-2 text-sm space-y-1">
+                                            <li>Adminstration de serveur Linux.</li>
+                                            <li>Création de script Linux pour l'administration.</li>
+                                            <li>Proof of Concept d'automatisation de déploiement d'un cluster CEPH avec Ansible.</li>
+                                            <li>Filtre des adresses à autoriser sur liste blanche pour nos proxy.</li>
+                                            <li>Création de serveur Proxmox avec des scripts</li>
+                                            <li>Intégration à la supervision de façon automatisé des hyperviseurs Proxmox avec Ansible.</li>
+                                            <li>Création de script pour la supervision des services des hyperviseurs Proxmox (Vérification de l'Agent Qemu sur les VM, Détection des snapshots vieux, Vérification de l'état de santé de CEPH, Vérification des Backups)</li>
+                                            <li>Monitoring des serveurs Proxmox avec Grafana</li>
+                                            <li>Proof of Concept d'un équilibreur de charge et de redondance réseau pour nos hyperviseurs Proxmox avec routage dynamique OSPF3,ECMP et IPV6.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 (Formation) -->
+                    <div class="relative mb-8">
+                        <div class="md:flex md:items-center md:justify-end">
+                            <div class="md:w-1/2 md:pr-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg relative ml-8 md:ml-5">
+                                    <!-- Dot -->
+                                    <div class="absolute w-6 h-6 bg-gray-800 rounded-full border-4 border-gray-100 -left-11 top-1/2 -translate-y-1/2 md:left-auto md:-right-11"></div>
+                                    <p class="text-sm font-medium text-violet-600">Septembre 2025 à aujourd'hui</p>
+                                    <h3 class="font-bold text-gray-800 text-xl mt-1">Licence professionnel, Administrateur Système et Réseau (Bac+4)</h3>
+                                    <p class="text-sm text-gray-600">Centre Hospitalier Henri Laborit | ENI, Niort</p>
+                                    <p class="text-xs text-gray-500 italic mt-1">Durée : 1 an</p>
+                                    <p class="text-gray-700 mt-2 text-sm">Formation orientée sur l’administration, la sécurisation et la supervision des infrastructures systèmes et réseaux.</p>
+                                    <ul class="list-disc list-inside text-gray-700 mt-2 text-sm space-y-1">
+                                       <li><strong>Compétences étudiées :</strong>  Administration Systèmes (Linux, Windows Server, Active Directory, DNS, DHCP), Réseaux d’entreprise (CCNA2 & CCNA3, routage, commutation, VLAN, Wi-Fi, VPN), Virtualisation et Haute Disponibilité (Proxmox, VMware, VirtualBox, sauvegarde/restauration), Sécurité Réseau (Pare-feu Stormshield SNS, segmentation réseau, supervision SNMP/NRPE), Projets et Certification (Infrastructure sécurisée, certification CSNA – Stormshield Network Administrator)</li>
+                                       <li><strong>Missions entreprise:</strong></li>
+                                        <ul class="list-disc list-inside ml-5 text-gray-700 mt-2 text-sm space-y-1">
+                                            <li>Adminstration de serveur Linux.</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-16 border-gray-200">
+
+        <!-- Section Diplômes -->
+        <section id="diplomes">
+            <h2 class="text-3xl font-bold mb-8 text-center">Mes diplômes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                
+                <!-- Diplôme 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <h3 class="text-xl font-bold text-gray-800">Baccalauréat Professionnel Système Numérique</h3>
+                    <p class="text-gray-600 mt-1">Lycée Bernard Palissy, Saintes</p>
+                    <p class="text-violet-600 font-medium mt-2">Obtenu en 2022, mention bien</p>
+                </div>
+
+                <!-- Diplôme 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <h3 class="text-xl font-bold text-gray-800">BTS SIO, Spécialité Solutions d'infrastructures, Systèmes et Réseaux.</h3>
+                    <p class="text-gray-600 mt-1">Alienor d'Aquitaine, Poitiers</p>
+                    <p class="text-violet-600 font-medium mt-2">Obtenu en 2024</p>
+                </div>
+
+                <!-- Diplôme 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <h3 class="text-xl font-bold text-gray-800">Licence Professionnel Administrateur Systèmes DevOps.</h3>
+                    <p class="text-gray-600 mt-1">ENI Informatique, Niort</p>
+                    <p class="text-violet-600 font-medium mt-2">Obtenu en 2025</p>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="my-16 border-gray-200">
+
+        <!-- Section Compétences -->
+        <section id="competences">
+            <h2 class="text-3xl font-bold mb-6 text-center">Mes compétences</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-center">Administration Systèmes</h3>
+                    <ul class="space-y-2 text-center text-gray-700">
+                        <li>Installation, Configuration, Automatisation, Maintenance, Sécurisation, Supervision</li>
+                        <li>Debian, Ubuntu, Windows</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-center">Réseaux</h3>
+                    <ul class="space-y-2 text-center text-gray-700">
+                        <li>Maîtrise des bases réseaux</li>
+                        <li>OSPF, ECMP, SNMP, FTP, SMB, HTTPS, TCP, UDP</li>
+                        <li>Analyse réseau, Surveillance réseau, Cartographie Réseau, Routage dynamqieu, Equilibrage de charge, redondance</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-center">Outils</h3>
+                    <ul class="space-y-2 text-center text-gray-700">
+                        <li>Git / GitHub / Gitlab</li>
+                        <li>Wireshark</li>
+                        <li>Docker</li>
+                        <li>Python</li>
+                        <li>Ansible</li>
+                        <li>Terraform</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="my-16 border-gray-200">
+
+        <!-- Section Projets 
+        <section id="projets">
+            <h2 class="text-3xl font-bold mb-6 text-center">Mes projets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+           -->     
+                <!-- Projet 1 
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://placehold.co/600x400/e2e8f0/334155?text=Projet+1" alt="Aperçu du projet 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Nom du Projet 1</h3>
+                        <p class="text-gray-700 mb-4 text-sm">Description brève du projet, des technologies utilisées et du rôle que vous avez joué.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-full text-center bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition">Voir le projet</a>
+                            <a href="#" class="w-full text-center bg-white text-gray-800 border border-gray-800 px-4 py-2 rounded-lg hover:bg-gray-100 transition">Voir le code</a>
+                        </div>
+                    </div>
+                </div>
+-->
+                <!-- Projet 2
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://placehold.co/600x400/e2e8f0/334155?text=Projet+2" alt="Aperçu du projet 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Nom du Projet 2</h3>
+                        <p class="text-gray-700 mb-4 text-sm">Description brève du projet, des technologies utilisées et du rôle que vous avez joué.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-full text-center bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition">Voir le projet</a>
+                            <a href="#" class="w-full text-center bg-white text-gray-800 border border-gray-800 px-4 py-2 rounded-lg hover:bg-gray-100 transition">Voir le code</a>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <!-- Projet 3 (à ajouter) 
+                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://placehold.co/600x400/e2e8f0/334155?text=Projet+3" alt="Aperçu du projet 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Nom du Projet 3</h3>
+                        <p class="text-gray-700 mb-4 text-sm">Description brève du projet, des technologies utilisées et du rôle que vous avez joué.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-full text-center bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition">Voir le projet</a>
+                            <a href="#" class="w-full text-center bg-white text-gray-800 border border-gray-800 px-4 py-2 rounded-lg hover:bg-gray-100 transition">Voir le code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+-->
+        <hr class="my-16 border-gray-200">
+
+        <!-- Section Contact -->
+        <section id="contact" class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 text-center">Me contacter</h2>
+            <form action="#" class="max-w-xl mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 mb-1">Nom</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-800">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 mb-1">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-800">
+                </div>
+                <div class="mb-4">
+                    <label for="subject" class="block text-gray-700 mb-1">Sujet</label>
+                    <input type="text" id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-800">
+                </div>
+                
+                <!-- Assistant de rédaction Gemini -->
+                <div class="mb-4 p-4 bg-violet-50 border border-violet-200 rounded-lg">
+                     <label for="gemini-prompt" class="block text-gray-800 mb-2 font-semibold">Besoin d'aide pour rédiger ?</label>
+                     <p class="text-sm text-gray-600 mb-3">Entrez quelques points clés et notre assistant IA rédigera un message pour vous.</p>
+                    <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+                        <input type="text" id="gemini-prompt" placeholder="Ex: alternance React, disponible dès maintenant" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500">
+                        <button type="button" id="generate-message-btn" class="bg-violet-600 text-white px-4 py-2 rounded-lg hover:bg-violet-700 transition font-bold flex items-center justify-center whitespace-nowrap">
+                             <span class="mr-2">✨</span> Générer
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 mb-1">Message</label>
+                    <textarea id="message" rows="6" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-800" placeholder="Votre message... ou le message généré par l'IA apparaîtra ici."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gray-800 text-white px-4 py-3 rounded-lg hover:bg-gray-700 transition font-bold">Envoyer</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto p-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://github.com/Louineau" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300 transition">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/corentin-louineau-9b76361a3/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300 transition">
+                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+            </div>
+            <p>&copy; 2024 Noah Louineau. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Logique pour le menu mobile
+        const menuBtn = document.getElementById('menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Fermer le menu en cliquant sur un lien
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // --- Intégration de l'API Gemini ---
+        const generateBtn = document.getElementById('generate-message-btn');
+        const geminiPromptInput = document.getElementById('gemini-prompt');
+        const messageTextarea = document.getElementById('message');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const subjectInput = document.getElementById('subject');
+
+        generateBtn.addEventListener('click', async () => {
+            const userPrompt = geminiPromptInput.value;
+            if (!userPrompt.trim()) {
+                messageTextarea.value = "Veuillez entrer quelques points clés pour que l'assistant puisse rédiger un message.";
+                return;
+            }
+
+            // Affiche l'état de chargement
+            messageTextarea.value = "Génération du message en cours...";
+            generateBtn.disabled = true;
+            generateBtn.classList.add('opacity-50', 'cursor-not-allowed');
+
+            const name = nameInput.value || 'une personne intéressée';
+            const subject = subjectInput.value || 'une prise de contact';
+
+            const systemPrompt = `Vous êtes un assistant de rédaction professionnel et amical. Votre tâche est de rédiger un e-mail en français pour contacter un développeur web nommé Noah Louineau.
+- Le message doit être rédigé au nom de : "${name}".
+- Le sujet de la prise de contact est : "${subject}".
+- Le ton doit être professionnel, respectueux et concis.
+- Basez-vous exclusivement sur les points clés fournis par l'utilisateur.
+- Structurez le message en 2 ou 3 courts paragraphes.
+- Terminez par une formule de politesse appropriée.`;
+            
+            const fullUserQuery = `Voici les points clés fournis par l'utilisateur : "${userPrompt}". Rédigez le message maintenant.`;
+
+            const apiKey = ""; // La clé API sera fournie par l'environnement d'exécution
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+
+            const payload = {
+                systemInstruction: { parts: [{ text: systemPrompt }] },
+                contents: [{ parts: [{ text: fullUserQuery }] }]
+            };
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Erreur API: ${response.status} ${response.statusText}`);
+                }
+
+                const result = await response.json();
+                const candidate = result.candidates?.[0];
+
+                if (candidate && candidate.content?.parts?.[0]?.text) {
+                    messageTextarea.value = candidate.content.parts[0].text;
+                } else {
+                    throw new Error("La réponse de l'API est invalide ou vide.");
+                }
+
+            } catch (error) {
+                console.error("Erreur lors de l'appel à l'API Gemini:", error);
+                messageTextarea.value = "Désolé, une erreur est survenue lors de la génération du message. Veuillez réessayer plus tard ou rédiger le message manuellement.";
+            } finally {
+                // Retire l'état de chargement
+                generateBtn.disabled = false;
+                generateBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        });
+    </script>
+
+</body>
+</html>
+
